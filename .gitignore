@@ -21,3 +21,9 @@ first/polls/views/__pycache__/__init__.cpython-37.pyc
 first/polls/views/__pycache__/detail.cpython-37.pyc
 first/polls/views/__pycache__/index.cpython-37.pyc
 first/polls/views/__pycache__/result.cpython-37.pyc
+first/polls/tests/view/__pycache__/indexTest.cpython-37.pyc
+first/polls/tests/__pycache__/__init__.cpython-37.pyc
+first/polls/tests/model/__pycache__/__init__.cpython-37.pyc
+first/polls/tests/view/__pycache__/__init__.cpython-37.pyc
+first/polls/tests/view/__pycache__/detailTest.cpython-37.pyc
+first/polls/tests/model/__pycache__/questionTest.cpython-37.pyc
