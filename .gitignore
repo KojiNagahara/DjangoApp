@@ -27,3 +27,4 @@ first/polls/tests/model/__pycache__/__init__.cpython-37.pyc
 first/polls/tests/view/__pycache__/__init__.cpython-37.pyc
 first/polls/tests/view/__pycache__/detailTest.cpython-37.pyc
 first/polls/tests/model/__pycache__/questionTest.cpython-37.pyc
+first/polls/tests/view/__pycache__/createModels.cpython-37.pyc
