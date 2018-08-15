@@ -1,2 +1,2 @@
-from webui.models.question import Question
-from webui.models.choice import Choice
+from polls.models.question import Question
+from polls.models.choice import Choice

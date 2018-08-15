@@ -1,6 +1,6 @@
 import datetime
 
-from webui.models.question import Question
+from .question import Question
 
 from django.db import models
 from django.utils import timezone
