@@ -1,7 +1,9 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
+from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
+from django.db.models import F
 
 from polls.models import Question, Choice
 
@@ -16,8 +18,12 @@ def vote(request, question_id):
             'error_message': "You didn't select a choice.",
         })
     else:
-        selected_choice.votes += 1
+        #RDBの排他制御を使って更新する
+        selected_choice.votes = F('votes') + 1
         selected_choice.save()
+        # selected_choice.update(votes = F('votes') + 1)　はNG。
+        # Choice自体はQuerySetではないからupdateなんてattributeはないと言われて例外が飛ぶ。
+
         # Always return an HttpResponseRedirect after successfully dealing
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
